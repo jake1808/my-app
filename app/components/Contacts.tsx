@@ -41,7 +41,7 @@ const Contacts = () => {
       <Container>
         <Left>
           <Form id='form' onSubmit={handleSubmit}>
-            <Title>Contact us</Title>
+            <Title>Contact me</Title>
             <Input placeholder='Name' name='name' />
             <Input placeholder='Email' name='email' />
             <TextArea placeholder='Write your message' rows={10} name='message' />
