@@ -8,17 +8,17 @@ const Cube = () => {
     useFrame(state => (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 0.5))
     return (
         <mesh>
-            <boxGeometry args={[2, 2, 2]} />
+            <boxGeometry />
             <meshStandardMaterial >
                 <RenderTexture attach="map">
                     {/* TODO:YOU CAN CHANGE THE PERSPECTIVE OF THE TEXT HERE */}
                     <PerspectiveCamera
                         makeDefault
-                        position={[0, 0, 2]}
+                        position={[0, 0, 5]}
                     />
                     {/* TODO:YOU CAN CHANGE THE COLOR AND TEXT HERE OF THE CUBE*/}
                     <color attach="background" args={["blue"]} />
-                    <Text ref={textRef} fontSize={0.5} color="white">
+                    <Text ref={textRef} fontSize={3} color="white">
                         hello
                     </Text>
                 </RenderTexture>

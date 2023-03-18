@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
@@ -26,12 +25,13 @@ const Who = () => {
 
             <Container>
                 <Left>
-                    <Canvas>
+                    {/* SET UP FOR THREEJS */}
+                    <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
                         {/* TODO: CONTROLLING THE MOVEMENT OF THE CUBES */}
-                        <OrbitControls enableZoom={false} />
+                        <OrbitControls enableZoom={false} autoRotate />
                         {/* TODO:CONTROL THE LIGHT OF THE CUBE */}
                         <ambientLight intensity={1} />
-                        <directionalLight position={3, 2, 1} />
+                        <directionalLight position={[3, 2, 1]} />
                         <Cube />
                     </Canvas>
                 </Left>
