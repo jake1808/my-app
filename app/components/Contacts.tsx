@@ -45,6 +45,7 @@ const Contacts = () => {
             <Input placeholder='Name' name='name' />
             <Input placeholder='Email' name='email' />
             <TextArea placeholder='Write your message' rows={10} name='message' />
+            {/* TODO: IMPLEMENTT LOADING ANIMATION */}
             <Button type='submit'>Send</Button>
             {success && "Your message has been sent. I'll get back to you soon :)"}
           </Form>
