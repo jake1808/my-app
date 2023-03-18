@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {DiGithubAlt} from 'react-icons/di'
+import Test from './ThreeJs/cube/Test'
 
 
 const Section = styled.div`
@@ -67,7 +68,7 @@ const Who = () => {
 
         <Container>
             <Left>
-                {/* Todo: 3d-model */}
+                <Test/>
             </Left>
             <Right>
                 <Title>Think outside the square space</Title>
