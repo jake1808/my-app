@@ -7,7 +7,7 @@ import {
   ListItem,
   Right,
   Section
-} from './styledComponents/worksComponents'
+} from '../components/styledComponents/worksComponents'
 
 const data = [
   "NextJs",

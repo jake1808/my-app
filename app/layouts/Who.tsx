@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
-import Cube from './ThreeJs/cube/Cube'
+import Cube from '../components/ThreeJs/cube/Cube'
 import {
     Button,
     Container,
@@ -15,7 +15,7 @@ import {
     Subtitle,
     Title,
     WhatIDo
-} from './styledComponents/whoComponents'
+} from '../components/styledComponents/whoComponents'
 
 
 

@@ -13,7 +13,7 @@ import {
     Subtitle,
     Title,
     WhatIDo
-} from './styledComponents/heroComponents'
+} from '../components/styledComponents/heroComponents'
 
 
 const Hero = () => {
