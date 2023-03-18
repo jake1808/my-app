@@ -56,7 +56,7 @@ position: relative;
 flex: 3;
 `
 export const Img = styled.img`
-width: 800px;
+width: 400px;
 height: 600px;
 object-fit: contain;
 position: absolute;
@@ -66,6 +66,7 @@ left: 0;
 right: 0;
 margin: auto;
 animation: animate 2s infinite ease alternate;
+
 
 @keyframes animate {
     to{

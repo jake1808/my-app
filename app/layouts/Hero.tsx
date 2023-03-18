@@ -14,6 +14,8 @@ import {
     Title,
     WhatIDo
 } from '../components/styledComponents/heroComponents'
+import { Canvas } from '@react-three/fiber'
+import { MeshDistortMaterial, OrbitControls, Sphere } from '@react-three/drei'
 
 
 const Hero = () => {
@@ -31,8 +33,22 @@ const Hero = () => {
                     <Button>Learn More</Button>
                 </Left>
                 <Right>
-                    {/* Todo: 3d-model */}
-                    <Img src='./jacob.jpg' />
+                    <Canvas >
+                        {/* TODO: CONTROLLING THE MOVEMENT OF THE CUBES */}
+                        <OrbitControls enableZoom={false} />
+                        {/* TODO:CONTROL THE LIGHT OF THE CUBE */}
+                        <ambientLight intensity={1} />
+                        <directionalLight position={[3, 2, 1]} />
+                        <Sphere args={[1, 100, 200]} scale={2.3} >
+                            <MeshDistortMaterial
+                                color="#486972"
+                                attach="material"
+                                distort={0.5}
+                                speed={2}
+                            />
+                        </Sphere>
+                    </Canvas>
+                    <Img src='./jacob-removebg.png' />
                 </Right>
             </Container>
         </Section>
