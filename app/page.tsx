@@ -1,10 +1,10 @@
 'use client'
 import { Inter } from 'next/font/google'
 
-import Hero from './components/Hero'
-import Who from './components/Who'
-import Works from './components/Works'
-import Contacts from './components/Contacts'
+import Hero from './layouts/Hero'
+import Who from './layouts/Who'
+import Works from './layouts/Works'
+import Contacts from './layouts/Contacts'
 import { MainContainer } from './components/styledComponents/pageComponents'
 
 const inter = Inter({ subsets: ['latin'] })

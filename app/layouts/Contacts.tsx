@@ -12,7 +12,7 @@ import {
   Section,
   TextArea,
   Title
-} from './styledComponents/contactsComponents';
+} from '../components/styledComponents/contactsComponents';
 
 
 
