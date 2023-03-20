@@ -37,11 +37,11 @@ const Hero = () => {
                         {/* TODO: CONTROLLING THE MOVEMENT OF THE CUBES */}
                         <OrbitControls enableZoom={false} />
                         {/* TODO:CONTROL THE LIGHT OF THE CUBE */}
-                        <ambientLight intensity={1} />
+                        <ambientLight intensity={2} />
                         <directionalLight position={[3, 2, 1]} />
-                        <Sphere args={[1, 100, 200]} scale={2.3} >
+                        <Sphere args={[1, 100, 200]} scale={2.4} >
                             <MeshDistortMaterial
-                                color="#486972"
+                                color="#4d717b"
                                 attach="material"
                                 distort={0.5}
                                 speed={2}

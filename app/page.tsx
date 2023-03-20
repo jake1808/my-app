@@ -5,6 +5,7 @@ import Hero from './layouts/Hero'
 import Who from './layouts/Who'
 import Works from './layouts/Works'
 import Contacts from './layouts/Contacts'
+import Test from './layouts/test'
 import { MainContainer } from './components/styledComponents/pageComponents'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <main style={inter.style}>
       <MainContainer >
+        <Test />
         <Hero />
         <Who />
         <Works />

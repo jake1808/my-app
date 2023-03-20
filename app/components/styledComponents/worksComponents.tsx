@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 interface ListItemProp {
-    text: string
+  text: string
 }
 
 export const Section = styled.div`
@@ -30,6 +30,7 @@ export const List = styled.ul`
   
   `
 
+//TODO: FIX TEXT.
 export const ListItem = styled.li<ListItemProp>`
   font-size: 90px;
   font-weight: bold;
