@@ -5,8 +5,9 @@ import Hero from './layouts/Hero'
 import Who from './layouts/Who'
 import Works from './layouts/Works'
 import Contacts from './layouts/Contacts'
-import Test from './layouts/test'
+
 import { MainContainer } from './components/styledComponents/pageComponents'
+import ThreeScene from './components/ThreeJs/cube/ThreeScene'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,7 @@ export default function Home() {
   return (
     <main style={inter.style}>
       <MainContainer >
-        <Test />
+        <ThreeScene />
         <Hero />
         <Who />
         <Works />
