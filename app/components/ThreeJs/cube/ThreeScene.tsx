@@ -12,8 +12,8 @@ const Model = () => {
     const coinRef = useRef<Mesh>(null!)
 
     useFrame(() => {
-        coinRef.current.rotation.x += 0.005;
-        coinRef.current.rotation.y += 0.01
+        coinRef.current.rotation.z += 0.005;
+        // coinRef.current.rotation.y += 0.01 
     });
 
     return (
